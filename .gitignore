@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 RD*.py
 logs/*
-！RDL_net.py
+!RDL_net.py
 tem.py
 run.py
 *.ipynb
