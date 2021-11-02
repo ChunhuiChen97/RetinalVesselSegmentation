@@ -271,12 +271,6 @@ def main(args):
     threshold_confusion = 0.5
     print("\nConfusion matrix:  Costum threshold (for positive) of " +str(threshold_confusion))
     binarized_y_pred = np.where(y_prediction>threshold_confusion, 1,0)
-    # y_pred = np.empty((y_prediction.shape[0]))
-    # for i in range(y_prediction.shape[0]):
-    #     if y_prediction[i]>=threshold_confusion:
-    #         y_pred[i]=1
-    #     else:
-    #         y_pred[i]=0
     confusion = confusion_matrix(y_label, binarized_y_pred)
     print(confusion)
     accuracy = 0

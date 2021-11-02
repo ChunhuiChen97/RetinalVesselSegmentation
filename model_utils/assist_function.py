@@ -68,6 +68,7 @@ def iden_to_imgs(y_pred, patch_height, patch_width, mode = 'original'):
         predicted_img_patches = y_pred
         
     elif mode == 'threshold':
+        # or y_pred = np.where(y_pred>0.5,1,0)
         for i in range(y_pred.shape[0]):
             for j in range(y_pred.shape[1]):
                 for k in range(y_pred.shape[2]):

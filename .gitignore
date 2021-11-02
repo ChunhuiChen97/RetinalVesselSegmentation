@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 RD*.py
-logs/
+logs/*
 ！RDL_net.py
 tem.py
 run.py

@@ -32,7 +32,8 @@ def dataset_normalize(imgs):
     imgs_mean = np.mean(imgs)
     imgs_normalized = (imgs - imgs_mean)/imgs_std # global normalization
     for i in range(imgs.shape[0]):
-        imgs_normalized[i] = ((imgs_normalized[i] - np.min(imgs_normalized[i]))/(np.max(imgs_normalized[i]) - np.min(imgs_normalized[i]))) * 255
+        imgs_normalized[i] = (((imgs_normalized[i] - np.min(imgs_normalized[i]))
+                            /(np.max(imgs_normalized[i]) - np.min(imgs_normalized[i]))) * 255)
     return imgs_normalized
 
 def hist_equalize(imgs):

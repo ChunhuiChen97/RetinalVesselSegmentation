@@ -16,7 +16,6 @@ class H5Dataset(Dataset):
          self.target_tensor = target_tensor
  
      def __getitem__(self, index):
-         # print(index)
          return self.data_tensor[index], self.target_tensor[index]
  
      def __len__(self):

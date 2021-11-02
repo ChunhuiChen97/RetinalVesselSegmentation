@@ -25,8 +25,7 @@ def get_data_training(Train_imgs_original,
 
     train_imgs = image_preprocessing(train_imgs_original)
     train_GT = train_GT / 255.0
-    # train_imgs = train_imgs[:, 9:574, :, :] # crop images into 565*565
-    # train_GT = train_GT[:, 9:574, :, :]
+
     data_consistency_check(train_imgs, train_GT)
     
     assert(np.max(train_GT) == 1 and np.min(train_GT) == 0.0)

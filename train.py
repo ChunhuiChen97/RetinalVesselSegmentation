@@ -209,7 +209,7 @@ def main(args):
         optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, betas = (0.9,0.999), eps = 1e-08, weight_decay=args.decay_rate)
     else:
         optimizer = torch.optim.SGD(model.parameters(), lr = args.lr, momentum=0.9)
-    # lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer=optimizer, step_size = 2, gamma=0.95, last_epoch = -1)
+
     lr_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer=optimizer,mode="min", factor=0.8, patience=3,min_lr=1e-6, verbose=True)
     """ TRAINING """
     log_string("Start training ...")

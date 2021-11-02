@@ -7,7 +7,7 @@ def write_hdf5(arr, output):
     with h5py.File(output, 'w') as f:
         f.create_dataset('image', data = arr, dtype = arr.dtype)
 
-# convert format of GT and masks from .gif to .png
+# convert format of GT and masks from .gif to .png, use it only once.
 '''
 def format_conversion(orig_dir, dest_dir):
     files = next(os.walk(orig_dir))[2]

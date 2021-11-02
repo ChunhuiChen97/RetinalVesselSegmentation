@@ -25,14 +25,14 @@ def write_hdf5(arr, output):
 
 
 # training image path
-orig_train_imgs_dir = 'E:/A08-CNN project/DATABASE/DRIVE/training/images'
-train_GT_dir = 'E:/A08-CNN project/DATABASE/DRIVE/training/1st_manual'
-train_mask_dir = 'E:/A08-CNN project/DATABASE/DRIVE/training/mask'
+orig_train_imgs_dir = '../DATABASE/DRIVE/training/images'
+train_GT_dir = '../DATABASE/DRIVE/training/1st_manual'
+train_mask_dir = '../DATABASE/DRIVE/training/mask'
 # test image path
-orig_test_image_dir = 'E:/A08-CNN project/DATABASE/DRIVE/test/images'
-test_1stGT_dir = 'E:/A08-CNN project/DATABASE/DRIVE/test/1st_manual'
-test_2ndGT_dir = 'E:/A08-CNN project/DATABASE/DRIVE/test/2nd_manual'
-test_mask_dir = 'E:/A08-CNN project/DATABASE/DRIVE/test/mask'
+orig_test_image_dir = '../DATABASE/DRIVE/test/images'
+test_1stGT_dir = '../DATABASE/DRIVE/test/1st_manual'
+test_2ndGT_dir = '../DATABASE/DRIVE/test/2nd_manual'
+test_mask_dir = '../DATABASE/DRIVE/test/mask'
 
 
 # In[4]:

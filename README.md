@@ -16,6 +16,10 @@ The code is the implementation in Pytorch of my master project.
 torch>=1.7.0
 ```
 
+## Result
+
+wait to be added.
+
 ## Train
 
 such as, run the following command in terminal of Linux:
