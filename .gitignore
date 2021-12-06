@@ -2,7 +2,14 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+RD*.py
+logs/*
+!RDL_net.py
+tem.py
+run.py
+*.ipynb
+Database/*
+Dataset/
 # C extensions
 *.so
 
